@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COMMUNICATION</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<link rel="shortcut icon" href="thiru.ico" type="image/x-icon">
+	<link rel="icon" href="thiru.ico" type="image/x-icon">
+
+
+
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+    header {
+      height: 65px;
+      background-color: #DD4124; /* 2012 Tangerine Tango */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+	color: white;
+    }
+    .gov-logo {
+      height: 40px;
+    }
+    .google-logo {
+      height: 30px;
+    }
+    .btn-custom {
+      background-color: darkred;
+      color: white;
+      font-weight: bold;
+    }
+    table, th, td {
+      border: 1px solid #ddd;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 8px;
+      text-align: center;
+    }
+    .blink-text {
+      animation: blinker 1s linear infinite;
+      color: red;
+    }
+    @keyframes blinker {
+      55% { opacity: 0; }
+    }
+    .small-col {
+      width: 60px;
+    }
+    marquee {
+      font-weight: bold;
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1 class="m-0">INFORMATION</h1>
+  </header>
+
+  <!-- Second Row (2013 Emerald) with moved content -->
+  <div class="container-fluid" style="background-color: #009B77; padding: 5px 15px;">
+    <div class="row align-items-center text-white">
+      <div class="col text-center fw-bold" id="todayDate"></div>
+      <div class="col text-center fw-bold" id="todayTime"></div>
+      <div class="col text-center">
+        <img src="justice.png" alt="Justice Logo" class="gov-logo">
+      </div>
+      <div class="col text-end">
+        <a href="https://www.google.com/about/" target="_blank">
+          <img src="google.png" alt="Google" class="google-logo">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Line -->
+  <hr>
+
+  <!-- Intimation & Notice -->
+  <div class="container">
+    <h3 class="text-start">Intimation</h3>
+    <h3 class="blink-text">Notice</h3>
+
+    <!-- Marquee -->
+    <marquee direction="right"><h4>Petitioner must comply all instructions</h4></marquee>
+  </div>
+
+  <!-- 2 line space -->
+  <div style="height: 2rem;"></div>
+
+<table border="1" cellspacing="0" width="450" height="100" color:="" blue;="" font-size:="" x-large;="" style="
+    color: #006401;
+    border-color: deeppink;
+    font-size: larger;">
+	<tr style="color: darkblue;">
+
+            <th>
+                <strong>Petitioner</strong>
+            </th>
+            <th> 
+                <strong>Name</strong>
+            </th>
+            <th> 
+                <strong>Address</strong>
+            </th>
+
+	</tr>
+
+    <tr>
+        <td>
+		<style>
+img {
+  border-radius: 15%;
+}
+</style>
+            <img src="pnr1.jpg" height="110" class="center"> 
+        </td>
+              <td style="text-align: center;">
+            BOOPATHI
+        </td>
+              <td style="text-align: center;" style="color:#A52A2A;">
+            Sakthinagar
+        </td>
+    </tr>  
+
+    <table border="1" cellspacing="0" width="450" height="100" color:="" blue;="" font-size:="" x-large;="" style="
+    color: blue;
+    border-color: deeppink;
+    font-size: larger;">
+	<tr>
+		<td><strong> Doc.Reg.No.035/VOL-1/2025 dt:05/05/2025</strong></td>
+		<td><strong> Prayer for appoint the petitioner in place of the person who was illegally appointed</strong></td>
+	</tr>
+</table>
+
+<table border="1" cellspacing="0" width="450" height="100" color:="" blue;="" font-size:="" x-large;="" style="
+    color: darkblue;
+    border-color: deeppink;
+    font-size: larger;">
+	<tr>
+		<td>Identified By:</td>
+		<td><strong> Him self </td>
+	</tr>
+</table>
+
+<table border="1" cellspacing="0" width="450" height="100" color:="" blue;="" font-size:="" x-large;="" style="
+    color: darkblue;
+    border-color: deeppink;
+    font-size: larger;">
+	<tr>
+		<td>Address for Service</td>
+		<td><p> No.26/2,
+			<br> Sakthi Nagar,
+			<br> Thirupathur Taluk
+			<br> Thirupathur District
+			</p></td>
+	</tr>
+</table>
+
+<table border="1" cellspacing="0" width="450" height="100" color:="" blue;="" font-size:="" x-large;="" style="
+    color: blue;
+    border-color: deeppink;
+    font-size: larger;">
+	<tr>
+		<td style="text-align: center", style="color:#006400"> <P>Information Particulars <p></td> 
+		<td> <br> Fees for Petition has not Paid
+			<br> C.M.P. Notice to the Respondents Not Paid
+			<br> Relevant Postal Charges Rs.560/- Paid
+			<br> Batta Memo Process Fees not paid
+			<p style="color:red"> <strong>Important instruction : <br> the Petitioner should comply the instructions </strong> </p></td>
+
+	</tr>
+</table>
+</table>
+
+    <!-- Button -->
+    <div class="text-center mt-3">
+      <button class="btn btn-custom", "style="color:red" > Contact Your Counsel</button>
+    </div>
+  </div>
+
+  <script>
+    // Set Date
+    document.getElementById("todayDate").textContent = new Date().toLocaleDateString("en-IN", {
+      day: "2-digit", month: "2-digit", year: "numeric"
+    });
+
+    // Set Time
+    function updateTime() {
+      let now = new Date();
+      let hours = now.getHours();
+      let minutes = now.getMinutes();
+      let ampm = hours >= 12 ? 'PM' : 'AM';
+      hours = hours % 12;
+      hours = hours ? hours : 12; 
+      minutes = minutes < 10 ? '0' + minutes : minutes;
+      let strTime = hours + ':' + minutes + ' ' + ampm;
+      document.getElementById("todayTime").textContent = strTime;
+    }
+    setInterval(updateTime, 1000);
+    updateTime();
+  </script>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+
+
+</body>
+</html>
